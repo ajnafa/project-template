@@ -1,0 +1,67 @@
+---
+title: ""
+subtitle: ""
+abstract: "\\dropcap{}"
+first-author:
+  name: ""
+  affiliation: ""
+  orcid: ""
+second-author:
+  name: ""
+  affiliation: ""
+  orcid: ""
+firstfooter: ""
+format: 
+  pdf:
+    template: "../../assets/Manuscript_Template.tex"
+    highlight-style: arrow
+    linkcolor: "untgreen"
+    keep-tex: true
+    pdf-engine: xelatex
+    cite-method: biblatex
+    biblio-style: chicago-authordate
+    mathfont: "Libertinus Math"
+fontsize: 12pt
+papersize: letterpaper
+fontfamily: "libertine"
+urlcolor: untgreen
+github: "abortion-representation-paper"
+bibliography: "../../assets/references.bib"
+twoauthor: true
+double-spacing: true
+runninghead: ""
+tbl-cap-location: top
+header-includes: 
+  - \usepackage{mathtools, unicode-math}
+  - \setmathfont{NewCMMath-Regular.otf}
+  - \usepackage{afterpage}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  cache = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  echo = FALSE,
+  comment = ' ',
+  fig.align = "center",
+  cache.path = '_cache/',
+  fig.process = function(x) {
+    x2 = sub('-\\d+([.][a-z]+)$', '\\1', x)
+    if (file.rename(x, x2))
+      x2
+    else
+      x
+  }
+)
+
+pacman::p_load(
+  "tidyverse",
+  "data.table",
+  "dtplyr",
+  "kableExtra",
+  install = FALSE
+)
+```
+
+\dropcap{}
