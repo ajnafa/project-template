@@ -1,29 +1,28 @@
 ---
-title: "This is the Main Title"
-subtitle: "This is a Subtitle"
-abstract: "\\dropcap{T}his is where the abstract goes"
+title: "Supplementary Appendix"
+subtitle: "for *Title of the Paper*"
 author: "A. Jordan Nafa"
 affiliation: "University of North Texas"
 orcid: "0000-0001-5574-3950"
-firstfooter: "A. Jordan Nafa is a Doctoral Candidate in the Department of Political Science at the University of North Texas. His research focuses on applied Bayesian inference in the social sciences, comparative political behavior, and women in politics..."
-keywords: ""
+firstfooter: "All code and data necessary to replicate the analysis in the main text and this supplementary appendix is available via the [manuscript's github repository](https://github.com/ajnafa/github-repo)."
 singleauthor: true
-wordcount: ""
 format: 
   pdf:
-    template: "../../assets/Manuscript_Template.tex"
-    highlight-style: arrow
+    template: "../../assets/Appendix_Template.tex"
+    highlight-style: haddock
     linkcolor: "untgreen"
+    code-line-numbers: true
     keep-tex: true
     pdf-engine: xelatex
     cite-method: biblatex
     biblio-style: chicago-authordate
     mathfont: "Libertinus Math"
+    toc: true
 fontsize: 12pt
 papersize: letterpaper
 fontfamily: "libertine"
 urlcolor: untgreen
-github: "ajnafa/repo-name"
+github: "ajnafa/github-repo"
 bibliography: "../../assets/references.bib"
 double-spacing: true
 runninghead: "A. Jordan Nafa"
@@ -65,13 +64,31 @@ knitr::opts_chunk$set(
   }
 )
 
+# Load the required libraries
 pacman::p_load(
   "tidyverse",
-  "data.table",
-  "dtplyr",
+  "arrow",
+  "ggdist",
   "kableExtra",
+  "patchwork",
   install = FALSE
 )
+
+# Load the helper functions
+.helpers <- lapply(
+  list.files(
+    path = "../../functions/", 
+    pattern = ".*R", 
+    full.names = TRUE
+    ), 
+  source
+  )
 ```
 
-\dropcap{F}irst sentence...
+# Data and Computational Reproducibility
+
+## Descriptive Statistics
+
+## Arbitrary Decisions
+
+# Threats to Validity You Hope No One Sees

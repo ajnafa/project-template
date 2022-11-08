@@ -1,26 +1,24 @@
 ---
-title: ""
-abstract: ""
+title: "Word Document? Template"
+abstract: "This is the abstract"
 author:
-  - "*Author Name*"
-  - "Affiliation"
+  - "*A. Jordan Nafa*"
+  - "University of North Texas"
 format: 
   docx:
     toc: false
     reference-doc: "../../assets/Manuscript_Template.docx"
     linkcolor: "#00853E"
-    citeproc: true
-    csl: "../../../assets/apsa.csl"
+    csl: "../../assets/apsa.csl"
 fontsize: 12pt
 bibliography: "../../assets/references.bib"
 tbl-cap-location: top
 linkcolor: "#00853E"
-citecolor: "#00853E"
+crossref: 
+  tbl-prefix: ""
+  fig-prefix: ""
+  eq-prefix: ""
 ---
-
-::: {custom-style="Keywords"}
-*Keywords: *
-:::
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
@@ -39,6 +37,34 @@ knitr::opts_chunk$set(
       x
   }
 )
+
+# Load the required libraries
+pacman::p_load(
+  "tidyverse",
+  "arrow",
+  "ggdist",
+  "kableExtra",
+  "patchwork",
+  install = FALSE
+)
+
+
+# Load the helper functions
+.helpers <- lapply(
+  list.files(
+    path = "../../functions/", 
+    pattern = ".*R", 
+    full.names = TRUE
+    ), 
+  source
+  )
 ```
 
+::: {custom-style="keywords"}
+Keywords: *Gender and politics, peace science, party survival, political development, Bayesian model averaging*
+::: 
+
+::: {custom-style="First Paragraph"}
+How does...
+::: 
 

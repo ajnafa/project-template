@@ -290,15 +290,15 @@ $endif$
 	$if(title)$
 	% Distinct title Page Style Settings
 	\thispagestyle{titlepage}
-	\vspace*{2pt}
-	\begin{flushleft}
+	\vspace*{2cm}
+	\begin{center}
 		\fontsize{28pt}{28pt}\selectfont{%
 			\bfseries $title$$if(subtitle)$ $subtitle$$endif$ $if(thanks)$\thanks{$thanks$} $endif$
 		}\fontsize{18pt}{18pt}\blfootnote{\hspace*{-\footnotemargin}% 
 			$if(firstfooter)$$firstfooter$$endif$
 		}\\%
-	\end{flushleft}
-	\vspace*{6pt}
+	\end{center}
+	\vspace*{1cm}
 	$if(twoauthor)$
 	\begin{center}
 		\begin{tabular}[H]{cccc}
@@ -320,13 +320,13 @@ $endif$
 		\end{tabular}
 	\end{center}
 	$elseif(singleauthor)$
-	\begin{flushleft}
+	\begin{center}
 		\vspace*{6pt}
 		\fontsize{26pt}{26pt}\selectfont\textit{$if(anonymous)$$else$$author$$endif$}
 		\fontsize{18pt}{18pt}\selectfont\orcid{$orcid$} \gitrepo{$github$} \\
 		\vspace*{12pt}                                                                                  
 		\fontsize{18pt}{18pt}\selectfont \textbf{$if(anonymous)$$else$$affiliation$$endif$}
-	\end{flushleft}
+	\end{center}
 	$endif$
 	
 	$if(wordcount)$
@@ -347,7 +347,15 @@ $endif$
 	\vspace*{10pt}
 	$endif$
 	
+	\newpage
+	
 	$if(double-spacing)$\doublespacing$else$\onehalfspacing$endif$
+
+	$if(toc)$
+		\tableofcontents
+		\newpage
+	$endif$
+	
 	\fontsize{$fontsize$}{$fontsize$} $body$
 	
 	$if(endnotes)$
