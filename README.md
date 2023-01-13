@@ -24,5 +24,5 @@ execute the following command from a desktop terminal
 
 ## Licenses
 
-All code in this repository is licensed under a [BSD 3-Clause
+All code in this repository is licensed under a [MIT
 License](LICENSE.md).
