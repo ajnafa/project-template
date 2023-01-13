@@ -37,3 +37,7 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Extraneous files
+assets/references.sav
+assets/references.bib.bak

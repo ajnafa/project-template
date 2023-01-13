@@ -1,5 +1,5 @@
 ---
-title: "Word Document? Template"
+title: "Word Document Template"
 abstract: "This is the abstract"
 author:
   - "*A. Jordan Nafa*"
@@ -7,7 +7,7 @@ author:
 format: 
   docx:
     toc: false
-    reference-doc: "../../assets/Manuscript_Template.docx"
+    reference-doc: "../../assets/templates/Manuscript_Template.docx"
     linkcolor: "#00853E"
     csl: "../../assets/apsa.csl"
 fontsize: 12pt
@@ -61,10 +61,22 @@ pacman::p_load(
 ```
 
 ::: {custom-style="keywords"}
-Keywords: *Gender and politics, peace science, party survival, political development, Bayesian model averaging*
+Keywords: *keyword1, keyword2, etc.*
 ::: 
 
 ::: {custom-style="First Paragraph"}
 How does...
 ::: 
 
+Subsequent paragraph that is indented
+
+# This is a Section Header
+
+Some text here
+
+## This is a Subsection Header
+
+More text here
+
+See https://github.com/ajnafa/linked-fate-paper/blob/main/manuscript/ms-word/Stronger-Together-Draft.qmd
+for an example of settings for manuscripts with two or more authors

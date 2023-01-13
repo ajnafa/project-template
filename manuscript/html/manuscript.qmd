@@ -1,0 +1,30 @@
+---
+title: "Full Title Here"
+date: '`r format(Sys.time(), "%A, %B %d %Y")`'
+author: "A. Jordan Nafa"
+format: 
+  html:
+    theme: "../../assets/css/lux-modified.scss"
+    highlight-style: monokai
+    self-contained: true
+    citations-hover: true
+    code-link: true
+    code-block-bg: "#272822"
+    toc-location: left
+bibliography: "../../assets/references.bib"
+csl: "../../assets/apsa.csl"
+link-citations: yes
+page-layout: full
+fig-cap-location: top
+---
+
+# This is a Section Header
+
+Some text here
+
+## This is a Subsection Header
+
+More text here
+
+See https://github.com/ajnafa/ajnafa-website-quarto/blob/main/blog/2022/statistical-adjustment-interpretation/index.qmd
+for an example of usage and quarto features

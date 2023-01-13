@@ -8,7 +8,7 @@ firstfooter: "All code and data necessary to replicate the analysis in the main 
 singleauthor: true
 format: 
   pdf:
-    template: "../../assets/Appendix_Template.tex"
+    template: "../../assets/templates/Appendix_Template.tex"
     highlight-style: haddock
     linkcolor: "untgreen"
     code-line-numbers: true

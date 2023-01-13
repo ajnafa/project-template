@@ -5,13 +5,13 @@ abstract: "\\dropcap{T}his is where the abstract goes"
 author: "A. Jordan Nafa"
 affiliation: "University of North Texas"
 orcid: "0000-0001-5574-3950"
-firstfooter: "A. Jordan Nafa is a Doctoral Candidate in the Department of Political Science at the University of North Texas. His research focuses on applied Bayesian inference in the social sciences, comparative political behavior, and women in politics..."
+firstfooter: "A. Jordan Nafa is a Doctoral Candidate in the Department of Political Science at the University of North Texas. His research focuses on applied Bayesian statistics, causal inference, comparative political behavior, and women in politics..."
 keywords: ""
 singleauthor: true
 wordcount: ""
 format: 
   pdf:
-    template: "../../assets/Manuscript_Template.tex"
+    template: "../../assets/templates/Manuscript_Template.tex"
     highlight-style: arrow
     linkcolor: "untgreen"
     keep-tex: true
@@ -75,3 +75,14 @@ pacman::p_load(
 ```
 
 \dropcap{F}irst sentence...
+
+# This is a Section Header
+
+Some text here
+
+## This is a Subsection Header
+
+More text here
+
+See https://github.com/ajnafa/linked-fate-paper/blob/main/manuscript/latex/Stronger-Together-Draft-TeX.qmd
+for an example of settings for manuscripts with two or more authors
